@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="view.SmartHome">
+  <grid id="27dc6" binding="smartPanel" layout-manager="GridLayoutManager" row-count="7" column-count="5" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="500" height="400"/>
+    </constraints>
+    <properties>
+      <foreground color="-1767680"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <component id="d9ee" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="1" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="94" height="20"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value="Air Conditioner"/>
+        </properties>
+      </component>
+      <component id="4a023" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="1" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="31" height="44"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value="Light"/>
+          <verticalAlignment value="0"/>
+        </properties>
+      </component>
+      <component id="9d2a" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="1" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="23" height="20"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value="Fan"/>
+        </properties>
+      </component>
+      <component id="17e86" class="javax.swing.JSlider" binding="speedSlider">
+        <constraints>
+          <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="9" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="200" height="33"/>
+          </grid>
+        </constraints>
+        <properties>
+          <majorTickSpacing value="1"/>
+          <maximum value="2"/>
+          <minorTickSpacing value="1"/>
+          <paintLabels value="true"/>
+          <paintTicks value="false"/>
+          <value value="0"/>
+        </properties>
+      </component>
+      <component id="e30ee" class="javax.swing.JLabel" binding="fanStatus">
+        <constraints>
+          <grid row="2" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <foreground color="-1767680"/>
+          <text value="Off"/>
+        </properties>
+      </component>
+      <component id="9ec9" class="javax.swing.JLabel" binding="acMode">
+        <constraints>
+          <grid row="3" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <foreground color="-1767680"/>
+          <text value="Off"/>
+        </properties>
+      </component>
+      <component id="3d8ab" class="javax.swing.JComboBox" binding="acModes">
+        <constraints>
+          <grid row="3" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <model>
+            <item value="Off"/>
+            <item value="Cool"/>
+            <item value="Heat"/>
+          </model>
+        </properties>
+      </component>
+      <hspacer id="def2d">
+        <constraints>
+          <grid row="3" column="4" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <hspacer id="7dc8c">
+        <constraints>
+          <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <vspacer id="bea03">
+        <constraints>
+          <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+      <component id="b3a4a" class="javax.swing.JButton" binding="offButton" default-binding="true">
+        <constraints>
+          <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-16777216"/>
+          <label value="Off"/>
+          <text value="Off"/>
+        </properties>
+      </component>
+      <vspacer id="49c62">
+        <constraints>
+          <grid row="6" column="2" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+      <vspacer id="bf7a1">
+        <constraints>
+          <grid row="4" column="2" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+      <component id="d6d60" class="javax.swing.JLabel" binding="updateText">
+        <constraints>
+          <grid row="5" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <enabled value="true"/>
+          <foreground color="-1767680"/>
+          <text value="System is turned off in order to update system."/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+  <buttonGroups>
+    <group name="">
+      <member id="da06d"/>
+      <member id="def7"/>
+      <member id="3d89f"/>
+      <member id="e3ce9"/>
+    </group>
+  </buttonGroups>
+</form>
